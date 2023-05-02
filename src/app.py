@@ -12,7 +12,7 @@ load_dotenv(find_dotenv())
 app = Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
-BUCKET='ppdia-test'
+BUCKET='ppdia-bucket'
 
 #Run menu image through the model pipeline
 @app.route('/api/menu_reader', methods=['POST'])
